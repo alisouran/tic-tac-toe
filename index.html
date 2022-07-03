@@ -11,30 +11,29 @@
 
 <body>
   <h1>Tic Tac Toe</h1>
-  <div id="game">
-    <div id="board" class="board">
-      <div id="11" data-index="0" class="cell"></div>
-      <div id="12" data-index="1" class="cell"></div>
-      <div id="13" data-index="2" class="cell"></div>
-    </div>
-    <div id="board" class="board">
-      <div id="21" data-index="3" class="cell"></div>
-      <div id="22" data-index="4" class="cell"></div>
-      <div id="23" data-index="5" class="cell"></div>
-    </div>
-    <div id="board" class="board">
-      <div id="31" data-index="6" class="cell"></div>
-      <div id="32" data-index="7" class="cell"></div>
-      <div id="33" data-index="8" class="cell"></div>
-    </div>
-    <div id="reset">
+  <div class="status">
+    <p id="status-winner">
+      <span id="status-winner-text"></span>
+    </p>
+    <div class="reset">
       <button id="reset-button">Reset</button>
     </div>
-    <div id="status">
-      <p id="status-winner">
-        <span id="status-winner-text"></span>
-        <span id="status-winner-player"></span>
-      </p>
+  </div>
+  <div id="game">
+    <div id="board" class="board">
+      <div data-index="0" class="cell"></div>
+      <div data-index="1" class="cell"></div>
+      <div data-index="2" class="cell"></div>
+    </div>
+    <div id="board" class="board">
+      <div data-index="3" class="cell"></div>
+      <div data-index="4" class="cell"></div>
+      <div data-index="5" class="cell"></div>
+    </div>
+    <div id="board" class="board">
+      <div data-index="6" class="cell"></div>
+      <div data-index="7" class="cell"></div>
+      <div data-index="8" class="cell"></div>
     </div>
   </div>
   <script src="tic-tac-toe.js"></script>
