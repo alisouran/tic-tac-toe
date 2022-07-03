@@ -58,7 +58,7 @@ for (let i = 0; i < cells.length; i++) {
   cells[i].addEventListener('click', clickedCell);
 }
 
-const reset = el('#reset');
+const reset = el('#reset-button');
 reset.addEventListener('click', () => {
   board = [0, 0, 0, 0, 0, 0, 0, 0, 0];
   for (let i = 0; i < cells.length; i++) {
